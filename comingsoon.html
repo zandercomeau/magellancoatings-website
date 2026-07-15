@@ -183,96 +183,38 @@
         We're working hard to launch something amazing.
     </p>
 
-    <div class="row countdown justify-content-center">
+   <!-- Contact Information -->
+<div class="my-5">
 
-        <div class="col-6 col-md-3">
-            <div class="time-box">
-                <div class="time" id="days">00</div>
-                <div class="label">Days</div>
-            </div>
+    <h3 class="mb-4">Contact Us</h3>
+
+    <div class="row text-center">
+
+        <div class="col-md-4 mb-4">
+            <i class="bi bi-telephone-fill fs-2 mb-3"></i>
+            <h5>Phone</h5>
+            <p>(555) 123-4567</p>
         </div>
 
-        <div class="col-6 col-md-3">
-            <div class="time-box">
-                <div class="time" id="hours">00</div>
-                <div class="label">Hours</div>
-            </div>
+        <div class="col-md-4 mb-4">
+            <i class="bi bi-envelope-fill fs-2 mb-3"></i>
+            <h5>Email</h5>
+            <p>
+                <a href="mailto:info@yourcompany.com" class="text-white text-decoration-none">
+                    info@yourcompany.com
+                </a>
+            </p>
         </div>
 
-        <div class="col-6 col-md-3">
-            <div class="time-box">
-                <div class="time" id="minutes">00</div>
-                <div class="label">Minutes</div>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-            <div class="time-box">
-                <div class="time" id="seconds">00</div>
-                <div class="label">Seconds</div>
-            </div>
+        <div class="col-md-4 mb-4">
+            <i class="bi bi-geo-alt-fill fs-2 mb-3"></i>
+            <h5>Location</h5>
+            <p>Serving the Lower Mainland & Fraser Valley</p>
         </div>
 
     </div>
-
-    <form class="row g-3 justify-content-center">
-
-        <div class="col-md-8">
-            <input type="email" class="form-control" placeholder="Enter your email">
-        </div>
-
-        <div class="col-md-4 d-grid">
-            <button class="btn btn-primary">
-                Notify Me
-            </button>
-        </div>
-
-    </form>
-
-    <div class="social-icons mt-5">
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-twitter-x"></i></a>
-    </div>
-
-    <footer>
-        &copy; 2026 Your Company. All rights reserved.
-    </footer>
 
 </div>
-
-<script>
-
-const launchDate = new Date();
-launchDate.setDate(launchDate.getDate() + 30);
-
-function updateCountdown(){
-
-    const now = new Date().getTime();
-    const distance = launchDate - now;
-
-    const days = Math.floor(distance / (1000*60*60*24));
-    const hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-    const minutes = Math.floor((distance % (1000*60*60))/(1000*60));
-    const seconds = Math.floor((distance % (1000*60))/1000);
-
-    document.getElementById("days").innerHTML = String(days).padStart(2,"0");
-    document.getElementById("hours").innerHTML = String(hours).padStart(2,"0");
-    document.getElementById("minutes").innerHTML = String(minutes).padStart(2,"0");
-    document.getElementById("seconds").innerHTML = String(seconds).padStart(2,"0");
-
-    if(distance < 0){
-        document.querySelector(".countdown").innerHTML =
-            "<h3>🎉 We're Live!</h3>";
-    }
-
-}
-
-updateCountdown();
-setInterval(updateCountdown,1000);
-
-</script>
 
 </body>
 </html>
