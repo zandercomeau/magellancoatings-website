@@ -224,26 +224,73 @@
     </div>
 
 </div>
-<form class="row g-3 mt-4">
+
+    <form action="https://formspree.io/f/mnjeppdp" method="POST" class="row g-3 mt-4">
 
     <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Your Name" required>
+        <label class="form-label">Full Name</label>
+        <input
+            type="text"
+            class="form-control"
+            name="name"
+            placeholder="John Smith"
+            required>
     </div>
 
     <div class="col-md-6">
-        <input type="email" class="form-control" placeholder="Email Address" required>
+        <label class="form-label">Phone Number</label>
+        <input
+            type="tel"
+            class="form-control"
+            name="phone"
+            placeholder="(555) 123-4567"
+            required>
     </div>
 
     <div class="col-12">
-        <input type="tel" class="form-control" placeholder="Phone Number">
+        <label class="form-label">Email Address</label>
+        <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="john@example.com"
+            required>
     </div>
 
     <div class="col-12">
-        <textarea class="form-control" rows="4" placeholder="Tell us about your project..."></textarea>
+        <label class="form-label">Service Needed</label>
+        <select class="form-select" name="service" required>
+            <option value="">Select a service...</option>
+            <option>Interior Painting</option>
+            <option>Exterior Painting</option>
+            <option>Commercial Painting</option>
+            <option>Cabinet Refinishing</option>
+            <option>Deck & Fence Staining</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div class="col-12">
+        <label class="form-label">Project Address (Optional)</label>
+        <input
+            type="text"
+            class="form-control"
+            name="address"
+            placeholder="123 Main Street">
+    </div>
+
+    <div class="col-12">
+        <label class="form-label">Project Details</label>
+        <textarea
+            class="form-control"
+            name="message"
+            rows="5"
+            placeholder="Tell us about your painting project..."
+            required></textarea>
     </div>
 
     <div class="col-12 d-grid">
-        <button class="btn btn-primary btn-lg">
+        <button class="btn btn-primary btn-lg" type="submit">
             Request a Free Quote
         </button>
     </div>
