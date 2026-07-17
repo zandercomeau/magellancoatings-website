@@ -20,6 +20,8 @@
     <style>
         html {
             background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5);
+            overflow-x:hidden;
+            width:100%;
         }
         body{
             font-family:'Poppins',sans-serif;
@@ -170,6 +172,10 @@
                 margin:20px;
                 padding:40px 25px;
             }
+            body::before,
+            body::after {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -189,9 +195,10 @@
     </p>
 
    <!-- Contact Information -->
-<div class="my-5">
+<div class="my-5 container">
 
     <h3 class="mb-4">Contact Us</h3>
+    
 
     <div class="row text-center">
 
@@ -225,7 +232,7 @@
     <!-- Quote request form -->
     <h3 class="mb-4">Request a Free Quote</h3>
 
-</div>
+</div class="container">
 
     <form action="https://formspree.io/f/mnjeppdp" method="POST" class="row g-3">
 
