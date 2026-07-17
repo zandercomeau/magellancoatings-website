@@ -236,7 +236,7 @@
         <input
             type="text"
             class="form-control"
-            name="name"
+            name="Name"
             placeholder="John Smith"
             required>
     </div>
@@ -246,7 +246,7 @@
         <input
             type="tel"
             class="form-control"
-            name="phone"
+            name="Phone Number"
             placeholder="(555) 123-4567"
             required>
     </div>
@@ -256,21 +256,30 @@
         <input
             type="email"
             class="form-control"
-            name="email"
+            name="Email"
             placeholder="john@example.com"
             required>
     </div>
 
     <div class="col-12">
         <label class="form-label">Service Needed</label>
-        <select class="form-select" name="service" required>
+        <select class="form-select" name="Service" required>
             <option value="">Select a service...</option>
-            <option>Interior Painting</option>
-            <option>Exterior Painting</option>
-            <option>Commercial Painting</option>
-            <option>Cabinet Refinishing</option>
-            <option>Deck & Fence Staining</option>
+            <option>Interior and/or Exterior Painting</option>
+            <option>Wood Staining</option>
+            <option>Floor Epoxy</option>
+            <option>Drywall Repair</option>
             <option>Other</option>
+        </select>
+    </div>
+
+    <div class="col-12">
+        <label class="form-label">Sector</label>
+        <select class="form-select" name="Sector" required>
+            <option value="">Select a sector...</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Industrial</option>
         </select>
     </div>
 
@@ -279,7 +288,7 @@
         <input
             type="text"
             class="form-control"
-            name="address"
+            name="Project Address"
             placeholder="123 Main Street">
     </div>
 
@@ -287,7 +296,7 @@
         <label class="form-label">Project Details</label>
         <textarea
             class="form-control"
-            name="message"
+            name="Project Details"
             rows="5"
             placeholder="Tell us about your painting project..."
             required></textarea>
