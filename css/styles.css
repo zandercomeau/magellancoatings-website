@@ -10964,7 +10964,7 @@ header.masthead {
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/backdrop.jpg");
-  filter:brightness(25%);
+  filter: brightness(75%);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
