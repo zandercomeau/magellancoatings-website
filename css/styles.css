@@ -3792,6 +3792,10 @@ textarea.form-control-lg {
   white-space: nowrap;
 
 }
+.navbar-brand img {
+  height: 3rem;
+  width: auto;
+}
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
